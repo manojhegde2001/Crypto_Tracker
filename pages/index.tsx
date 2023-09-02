@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Cards from '@/components/Cards'
-import Smallcards from '@/components/Smallcards'
-import Table from '@/components/Table'
+import Navbar from '@/Header/Navbar'
+import Cards from '@/Home/Cards'
+import Smallcards from '@/Home/Smallcards'
+import Table from '@/Header/Table'
 
 
 
