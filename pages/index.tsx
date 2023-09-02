@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import Navbar from '@/Header/Navbar'
 import Cards from '@/Home/Cards'
 import Smallcards from '@/Home/Smallcards'
-import Table from '@/Header/Table'
+import Table from '@/Home/Table'
 
 
 

@@ -7,7 +7,7 @@ const Cards = () => {
   return (
 <><div className="w-full flex justify-center">
     <div className=" w-4/5 flex flex-row gap-4 justify-between">
-    <div className="w-1/3 h-[140px] flex p-2 justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
+    <div className="w-1/3 h-[140px] flex  justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
           <Image src={i1} alt="card1" className="flex-1" />
           <div className="flex flex-col justify-center">
             <p>Take a quiz</p>
@@ -16,7 +16,7 @@ const Cards = () => {
           </div>
     </div>
 
-    <div className=" w-1/3 h-[140px] flex p-2 justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
+    <div className=" w-1/3 h-[140px] flex justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
           <Image src={i2} alt="card2" className="flex-2" />
           <div className="flex flex-col justify-center">
             <p>Portfolio 🔥</p>
@@ -25,7 +25,7 @@ const Cards = () => {
           </div>
     </div>
 
-    <div className="w-1/3 h-[140px] flex p-2 justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
+    <div className="w-1/3 h-[140px] flex justify-between gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 ">
           <Image src={i3} alt="card3" className="flex-3" />
           <div className="flex flex-col justify-center">
             <p>Portfolio</p>
