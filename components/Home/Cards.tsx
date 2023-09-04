@@ -1,7 +1,7 @@
 import Image from "next/image";
-import i1 from "../public/Image1.png";
-import i2 from "../public/Image2.png";
-import i3 from "../public/Image3.png";
+import i1 from "../../public/Image1.png";
+import i2 from "../../public/Image2.png";
+import i3 from "../../public/Image3.png";
 
 const Cards = () => {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import s1 from "../public/Star.png"
+import s1 from "../../public/Star.png"
 
 
 const Smallcards = () => {

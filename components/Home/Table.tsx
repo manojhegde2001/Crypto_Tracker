@@ -1,15 +1,15 @@
 import { useState } from "react";
 import Image from "next/image";
-import bit from "../public/bitcoin.png";
-import eth from "../public/etherium.png";
-import card from "../public/cardano.png";
-import bin from "../public/binance.png";
-import tet from "../public/tether.png";
-import pol from "../public/polcat.png";
-import xrp from "../public/XRP.png";
-import vr from "../public/Vectorred.png";
-import vg from "../public/Vectorg.png";
-import s1 from "../public/Star.png";
+import bit from "../../public/bitcoin.png";
+import eth from ".././../public/etherium.png";
+import card from "../../public/cardano.png";
+import bin from "../../public/binance.png";
+import tet from "../../public/tether.png";
+import pol from "../../public/polcat.png";
+import xrp from "../../public/XRP.png";
+import vr from "../../public/Vectorred.png";
+import vg from "../../public/Vectorg.png";
+import s1 from "../../public/Star.png";
 
 
 
