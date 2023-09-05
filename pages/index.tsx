@@ -5,6 +5,7 @@ import Cards from "@/components/Home/Cards";
 import Smallcards from "@/components/Home/Smallcards";
 import Table from "@/components/Home/Table";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
       <Navbar />
       <Cards />
       <Smallcards />
-      <Table></Table>
+      <Table/>
     </div>
   );
 }

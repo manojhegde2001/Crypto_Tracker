@@ -4,7 +4,7 @@ import s1 from "../../public/Star.png"
 
 const Smallcards = () => {
     return (  
-        <div className="w-full flex justify-center text-xs font-semibold">
+        <div className="w-full flex justify-center text-xs font-semibold max-[750px]:hidden">
         <div className="w-4/5 justify-start flex flex-row gap-5 mt-3">
         <div className=" justify-center flex flex-row p-1 ">
             <Image src={s1} className="bg-slate-300 rounded-l-lg  " alt="star"/>

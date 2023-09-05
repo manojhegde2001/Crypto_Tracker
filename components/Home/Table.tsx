@@ -12,8 +12,8 @@ import vg from "../../public/Vectorg.png";
 import s1 from "../../public/Star.png";
 
 
-
 const Table = () => {
+  
   const data = [
     {
       id: "1",
@@ -124,206 +124,9 @@ const Table = () => {
       MARKETCAP: "$5678901234",
       VOLUME: "$4567890123",
       CIRCULATINGSUPPLY: "$5678901234",
-    },
-    {
-      id: "11",
-      img: bit,
-      NAME: "Eleventh Crypto",
-      PRICE: "$876543",
-      "24H": "4.56%",
-      "7D": "7.89%",
-      MARKETCAP: "$6789012345",
-      VOLUME: "$5678901234",
-      CIRCULATINGSUPPLY: "$6789012345",
-    },
-    {
-      id: "12",
-      img: bit,
-      NAME: "Twelfth Crypto",
-      PRICE: "$765432",
-      "24H": "5.67%",
-      "7D": "8.90%",
-      MARKETCAP: "$7890123456",
-      VOLUME: "$6789012345",
-      CIRCULATINGSUPPLY: "$7890123456",
-    },
-    {
-      id: "13",
-      img: bin,
-      NAME: "Thirteenth Crypto",
-      PRICE: "$654321",
-      "24H": "6.78%",
-      "7D": "9.01%",
-      MARKETCAP: "$8901234567",
-      VOLUME: "$7890123456",
-      CIRCULATINGSUPPLY: "$8901234567",
-    },
-    {
-      id: "14",
-      img:eth,
-      NAME: "Fourteenth Crypto",
-      PRICE: "$543210",
-      "24H": "7.89%",
-      "7D": "1.12%",
-      MARKETCAP: "$9012345678",
-      VOLUME: "$8901234567",
-      CIRCULATINGSUPPLY: "$9012345678",
-    },
-    {
-      id: "15",
-      img:pol,
-      NAME: "Fifteenth Crypto",
-      PRICE: "$43210",
-      "24H": "8.90%",
-      "7D": "2.23%",
-      MARKETCAP: "$0123456789",
-      VOLUME: "$9012345678",
-      CIRCULATINGSUPPLY: "$0123456789",
-    },
-    {
-      id: "16",
-      img: tet,
-      NAME: "Sixteenth Crypto",
-      PRICE: "$3210",
-      "24H": "9.01%",
-      "7D": "3.34%",
-      MARKETCAP: "$1234567890",
-      VOLUME: "$0123456789",
-      CIRCULATINGSUPPLY: "$1234567890",
-    },
-    {
-      id: "17",
-      img: card,
-      NAME: "Seventeenth Crypto",
-      PRICE: "$210",
-      "24H": "1.12%",
-      "7D": "4.45%",
-      MARKETCAP: "$2345678901",
-      VOLUME: "$1234567890",
-      CIRCULATINGSUPPLY: "$2345678901",
-    },
-    {
-      id: "18",
-      img: bit,
-      NAME: "Eighteenth Crypto",
-      PRICE: "$110",
-      "24H": "2.23%",
-      "7D": "5.56%",
-      MARKETCAP: "$3456789012",
-      VOLUME: "$2345678901",
-      CIRCULATINGSUPPLY: "$3456789012",
-    },
-    {
-      id: "19",
-      img: pol,
-      NAME: "Nineteenth Crypto",
-      PRICE: "$55",
-      "24H": "3.34%",
-      "7D": "6.67%",
-      MARKETCAP: "$4567890123",
-      VOLUME: "$3456789012",
-      CIRCULATINGSUPPLY: "$4567890123",
-    },
-    {
-      id: "20",
-      img:bin,
-      NAME: "Twentieth Crypto",
-      PRICE: "$25",
-      "24H": "4.45%",
-      "7D": "7.78%",
-      MARKETCAP: "$5678901234",
-      VOLUME: "$4567890123",
-      CIRCULATINGSUPPLY: "$5678901234",
-    },
-    {
-      "id": "21",
-      "img": bit,
-      "NAME": "Uniswap UNI",
-      "PRICE": "$25.67",
-      "24H": "0.45%",
-      "7D": "3.21%",
-      "MARKETCAP": "$5,432,109,876",
-      "VOLUME": "$456,789,012",
-      "CIRCULATINGSUPPLY": "211,234,567"
-    },
-    {
-      "id": "22",
-      "img": eth,
-      "NAME": "Dogecoin DOGE",
-      "PRICE": "$0.3456",
-      "24H": "2.34%",
-      "7D": "8.76%",
-      "MARKETCAP": "$7,890,123,456",
-      "VOLUME": "$654,321,098",
-      "CIRCULATINGSUPPLY": "22,345,678,901"
-    },
-    {
-      "id": "23",
-      "img":tet,
-      "NAME": "Stellar XLM",
-      "PRICE": "$0.256",
-      "24H": "0.98%",
-      "7D": "4.56%",
-      "MARKETCAP": "$4,567,890,123",
-      "VOLUME": "$567,890,123",
-      "CIRCULATINGSUPPLY": "17,890,123,456"
-    },
-    {
-      "id": "24",
-      "img": bin,
-      "NAME": "EOS EOS",
-      "PRICE": "$4.56",
-      "24H": "1.23%",
-      "7D": "5.67%",
-      "MARKETCAP": "$3,456,789,012",
-      "VOLUME": "$456,789,012",
-      "CIRCULATINGSUPPLY": "12,345,678,901"
-    },
-    {
-      "id": "25",
-      "img":pol,
-      "NAME": "Cosmos ATOM",
-      "PRICE": "$18.97",
-      "24H": "0.76%",
-      "7D": "6.78%",
-      "MARKETCAP": "$1,234,567,890",
-      "VOLUME": "$345,678,901",
-      "CIRCULATINGSUPPLY": "6,789,012,345"
-    },
-    {
-      "id": "26",
-      "img": eth,
-      "NAME": "Monero XMR",
-      "PRICE": "$127.34",
-      "24H": "0.56%",
-      "7D": "2.34%",
-      "MARKETCAP": "$2,345,678,901",
-      "VOLUME": "$123,456,789",
-      "CIRCULATINGSUPPLY": "18,901,234,567"
-    },
-    {
-      "id": "27",
-      "img": bit,
-      "NAME": "Tezos XTZ",
-      "PRICE": "$3.87",
-      "24H": "0.34%",
-      "7D": "1.23%",
-      "MARKETCAP": "$1,345,678,901",
-      "VOLUME": "$234,567,890",
-      "CIRCULATINGSUPPLY": "9,012,345,678"
-    },
-    {
-      "id": "28",
-      "img": card,
-      "NAME": "Solana SOL",
-      "PRICE": "$74.56",
-      "24H": "1.56%",
-      "7D": "7.89%",
-      "MARKETCAP": "$8,901,234,567",
-      "VOLUME": "$789,012,345",
-      "CIRCULATINGSUPPLY": "34,567,890,123"
     }
   ];
+  
   return (
     <div className="w-full">
     <div className="w-full flex justify-center">
@@ -334,7 +137,11 @@ const Table = () => {
               {Object.keys(data[0])
                 .filter((key) => key !== "img")
                 .map((key) => (
-                  <th className="py-2" key={key}>
+                  <th key={key} className={`py-3 my-3 text-start font-medium ${
+                    key === "7D"
+                      ? "max-[750px]:hidden"
+                      : key === "id" ? "max-[750px]:hidden":key === "MARKETCAP" ? "max-[750px]:hidden":key === "VOLUME" ? "max-[750px]:hidden": key === "CIRCULATINGSUPPLY" ? "max-[750px]:hidden": ""
+                  }`}>
                     {key}
                   </th>
                 ))}
@@ -344,18 +151,19 @@ const Table = () => {
             {data.map((dataItem) => (
               <tr
                 key={dataItem.id}
-                className="w-screen border-y-[1px] border-gray-300"
+                className={"w-screen border-y-[1px] border-gray-300"}
+                
               >
                 {Object.keys(dataItem)
                   .filter((key) => key !== "img")
                   .map((key) => (
                     <td
-                      className={`py-3 my-3 text-center font-medium ${
+                      className={`py-3 my-3 text-start font-medium ${
                         key === "24H"
                           ? "text-red-500"
                           : key === "7D"
                           ? "text-green-500"
-                          : ""
+                          : key === "id" ? "max-[750px]:hidden":key === "7D" ? "max-[750px]:hidden":key === "MARKETCAP" ? "max-[750px]:hidden":key === "VOLUME" ? "max-[750px]:hidden": key === "CIRCULATINGSYPPLY" ? "max-[750px]:hidden" : ""
                       }`}
                       key={key}
                     >
@@ -374,24 +182,25 @@ const Table = () => {
                           <Image src={vr} alt="vr" className="w-2 h-2" />
                           <span className="pl-1">{dataItem["24H"]}</span>
                         </div>
-                      ) : key === "7D" ? (
-                        <div className="flex items-center justify-center">
+                      ): key === "7D" ? (
+                        <div className="flex items-center justify-center max-[750px]:hidden">
                           <Image src={vg} alt="vg" className="w-2 h-2" />
                           <span className="pl-1">{dataItem["7D"]}</span>
                         </div>
                       ) : key === "VOLUME" ? (
-                        <div>
+                        <div >
                           <span>{dataItem["VOLUME"]}</span>
                           <p className="text-gray-500 font-normal text-sm text-center pl-10">
                             932,000 BTC
                           </p>
                         </div>
                       ) : key === "CIRCULATINGSUPPLY" ? (
-                        <div className="w-full flex flex-col justify-center ">
+                        <div className="w-full flex flex-col justify-center max-[750px]:hidden">
                           <span>{dataItem["CIRCULATINGSUPPLY"]}</span>
                           <div  className="w-2/3 items-center justify-center">
                             <div className="mb-6 h-1  bg-neutral-200">
-                              <div className="h-1 bg-slate-600 w-1/2"></div>
+                              <div className="h-1 bg-slate-600 w-1/2">
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -401,7 +210,7 @@ const Table = () => {
                           <Image src={s1} alt="star" className="w-4 h-4"/>
                           <span className="pl-3 text-gray-500 ">{dataItem["id"]}</span>
                         </div>
-                      ) :(
+                      ):(
                         dataItem[key]
                       )}
                     </td>
@@ -412,7 +221,7 @@ const Table = () => {
         </table>
       </div>
     </div>
-    <div className="w-4/5 justify-end">
+    <div className="w-4/5 flex justify-end">
    <nav aria-label="Page navigation" className="flex justify-end pt-5 pb-5">
   <ul className="list-style-none flex gap-2">
     <li>
