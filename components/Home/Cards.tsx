@@ -7,7 +7,7 @@ const Cards = () => {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <div className="w-4/5 flex flex-col md:flex-row gap-5">
-        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5">
+        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 hover:bg-blue-100">
           <div className="flex flex-row items-center">
             <Image src={i1} alt="card1" className="w-16 h-16" />
             <div className="flex flex-col ml-3">
@@ -19,7 +19,7 @@ const Cards = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5">
+        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 hover:bg-blue-100">
           <div className="flex flex-row items-center">
             <Image src={i2} alt="card2" className="w-16 h-16" />
             <div className="flex flex-col ml-3">
@@ -31,7 +31,7 @@ const Cards = () => {
           </div>
         </div>
 
-        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5">
+        <div className="w-full md:w-1/3 flex flex-col gap-3 border-2 shadow-lg rounded-xl p-4 mt-5 hover:bg-blue-100">
           <div className="flex flex-row items-center">
             <Image src={i3} alt="card3" className="w-16 h-16" />
             <div className="flex flex-col ml-3">

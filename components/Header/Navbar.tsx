@@ -39,17 +39,17 @@ const Navbar = () => {
       </nav>
 
       {isOpen && (
-        <div className="fixed top-0 flex-3 right-0 h-full w-2/3 bg-black text-center z-50 md:hidden ">
+        <div className="fixed top-0 flex-3 right-0 h-screen w-2/3 bg-black text-center z-50 md:hidden ">
           <div className="p-4">
             <Image
               src={close}
-              className="w-8 h-auto items-start items-start mb-10"
+              className="w-6 h-auto items-start items-start mb-20"
               onClick={closeSidebar}
               alt="closesidebar"
             />
             <a
               href="#"
-              className="flex text-center justify-center w-full py-2 text-white bg-gray-800 hover:bg-blue-600 border-white border-y-2 my-10"
+              className="flex text-center justify-center w-full py-2 text-white bg-gray-800 hover:bg-blue-600 border-red-white border-y-2 my-10"
             >
               HOME
             </a>
