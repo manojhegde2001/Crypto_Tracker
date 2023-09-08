@@ -7,7 +7,7 @@ import { API_ENDPOINTS } from "../utils/endpoints";
 const HomepageService = new CoreApi(API_ENDPOINTS.CRYPTO_DATA);
 
 export const fetchCryptoData =async (currentPage:number)=>{
-    const {data} = await HomepageService.findAllGet(API_ENDPOINTS.CRYPTO_DATA +"?page="+currentPage);
+    const {data} = await HomepageService.findAllGet(API_ENDPOINTS.CRYPTO_DATA + "?page=" + currentPage);
   
     return data;
   }

@@ -1,10 +1,10 @@
-import { useState } from "react";
+import React,{ useState } from "react";
 import Image from "next/image";
 import { useCryptoDataQuery } from "@/fraamework/rest/homepage/homepage.query";
 import vr from "../../public/Vectorred.png";
 import vg from "../../public/Vectorg.png";
 import star from "../../public/Star.png";
-const itemsPerPage = 10;
+const itemsPerPage = 0;
 
 const Table = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -112,46 +112,52 @@ const Table = () => {
               ))}
             </tbody>
           </table>
-          <div className="w-4/5 justify-center max-[750px]:w-fit max-[750px]:justify-end">
-  {/* Pagination */}
-  <nav aria-label="Page navigation" className="flex justify-end pt-5 pb-5 max-[750px]:items-end">
-    <ul className="flex gap-2">
-      <li>
-        <button
-          onClick={() => handlePageChange(currentPage - 1)}
-          disabled={currentPage === 0}
-          className="relative block border-2 bg-transparent rounded-lg px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-200"
-        >
-          &lt;
-        </button>
-      </li>
-      {Array.from({ length: totalPages }, (_, page) => (
-        <li key={page}>
-          <button
-            onClick={() => handlePageChange(page)}
-            className={`relative block rounded-lg border-2 max-[750px]:hidden ${
-              currentPage === page
-                ? "bg-blue-500 px-3 py-1.5 text-sm font-medium text-white max-[750px]:hidden"
-                : "bg-transparent px-3 py-1.5 text-sm text-black max-[750px]:hidden"
-            } transition-all duration-300 hover:bg-blue-300`}
-          >
-            {page + 1}
-          </button>
-        </li>
-      ))}
-      <li>
-        <button
-          onClick={() => handlePageChange(currentPage + 1)}
-          disabled={currentPage === totalPages - 1}
-          className="relative block rounded-lg border-2 font-medium text-black bg-transparent px-3 py-1.5 text-sm transition-all duration-300 hover:bg-neutral-200"
-        >
-          &gt;
-        </button>
-      </li>
-    </ul>
-  </nav>
-</div>
-
+          <div className="w-4/5 justify-end">
+        <nav aria-label="Page navigation" className="flex justify-end pt-5 pb-5">
+          <ul className="list-style-none flex gap-2">
+            <li>
+              <a
+                className="relative block border-2 bg-transparent rounded-lg px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400"
+                href="#!"
+                onClick={() => handlePageChange(currentPage - 1)}
+              >
+                &lt;
+              </a>
+            </li>
+            
+            {/* {Array.from({ length: totalPages }).map((_, index) => (
+              <li key={index}>
+                <a
+                  className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-100 ${
+                    currentPage === index ? "bg-primary-100" : ""
+                  }`}
+                  href="#!"
+                  onClick={() => handlePageChange(index)}
+                >
+                  {index + 1}
+                  {currentPage === index && (
+                    <span className="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 clip-rect(0,0,0,0)">
+                      (current)
+                    </span>
+                  )}
+                </a>
+              </li>
+            ))} */}
+            <li>
+              <a
+                className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400 
+                ${
+                  currentPage === totalPages - 1 ? "pointer-events-none" : ""
+                }`}
+                href="#!"
+                onClick={() => handlePageChange(currentPage + 1)}
+              >
+                &gt;
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
         </div>
       </div>
     </div>
