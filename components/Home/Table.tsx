@@ -4,7 +4,9 @@ import { useCryptoDataQuery } from "@/fraamework/rest/homepage/homepage.query";
 import vr from "../../public/Vectorred.png";
 import vg from "../../public/Vectorg.png";
 import star from "../../public/Star.png";
-const itemsPerPage = 0;
+
+
+const itemsPerPage = 10;
 
 const Table = () => {
   const [currentPage, setCurrentPage] = useState(0);
