@@ -9,6 +9,9 @@ const schema = yup.object().shape({
   age: yup.number().positive().integer().required(),
   password: yup.string().min(4).max(15).required(),
   confirmPassword: yup.string().oneOf([yup.ref("password")], "Passwords must match"),
+  place: yup.string().required(),
+  switch: yup.boolean().required("Switch is Required"),
+  image: yup.mixed().required(),
 });
 
 function Form() {
@@ -80,6 +83,44 @@ function Form() {
             />
             <p className="text-red-500">{errors?.confirmPassword?.message}</p>
           </div>
+          
+          <div className="mb-4">
+  <label htmlFor="place" className="block text-gray-700 font-semibold">Select a Place</label>
+  <select
+    id="place"
+    {...register("place")}
+    className="w-full px-3 py-2 border rounded-md outline-none text-gray-700"
+  >
+    <option value="Banglore">Banglore</option>
+    <option value="Chennai">Chennai</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Delhi">Delhi</option>
+    <option value="Kolkata">Kolkata</option>
+  </select>
+  <p className="text-red-500">{errors?.place?.message}</p>
+</div>
+
+
+<div className="mb-4">
+  <label htmlFor="switch" className="block text-gray-700 font-semibold">Switch</label>
+  <label className="relative inline-flex items-center cursor-pointer">
+    <input type="checkbox" className="sr-only peer" id="switch" {...register("switch")} />
+    <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600" />
+    <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Available</span>
+  </label>
+  <p className="text-red-500">{errors?.switch?.message}</p>
+</div>
+
+<div className="mb-4">
+  <label htmlFor="image" className="block text-gray-700 font-semibold">Select Image</label>
+  <div className="flex items-center space-x-2">
+    <input type="file" id="image" accept="image/*" {...register("image")} className="border rounded-md p-2" />
+  </div>
+</div>
+
+
+
+
           <div className="text-center">
             <button
               type="submit"
