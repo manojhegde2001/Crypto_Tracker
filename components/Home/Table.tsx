@@ -114,7 +114,7 @@ const Table = () => {
               ))}
             </tbody>
           </table>
-          <div className="w-4/5 justify-end">
+          <div className="w-full justify-end items-end">
         <nav aria-label="Page navigation" className="flex justify-end pt-5 pb-5">
           <ul className="list-style-none flex gap-2">
           <li>
@@ -132,27 +132,23 @@ const Table = () => {
               </a>
 </li>
             
-            {/* {Array.from({ length: totalPages }).map((_, index) => (
-              <li key={index}>
-                <a
-                  className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-100 ${
-                    currentPage === index ? "bg-primary-100" : ""
-                  }`}
-                  href="#!"
-                  onClick={() => handlePageChange(index)}
-                >
-                  {index + 1}
-                  {currentPage === index && (
-                    <span className="absolute -m-px h-px w-px overflow-hidden whitespace-nowrap border-0 p-0 clip-rect(0,0,0,0)">
-                      (current)
-                    </span>
-                  )}
-                </a>
-              </li>
-            ))} */}
-            <li>
-              <p className="relative block bg-transparent px-3 py-1.5 text-sm text-black font-medium">{currentPage + 1}</p>
-            </li>
+{/* {Array.from({ length: Math.min(10, endIndex - startIndex) }).map((_, index) => (
+  <li key={index}>
+    <a
+      className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-100 ${
+        currentPage === startIndex + index
+          ? "bg-blue-300"
+          : ""
+      }`}
+      href="#!"
+      onClick={() => handlePageChange(startIndex + index)}
+    >
+      {startIndex + index + 1}
+    </a>
+  </li>
+))} */}
+
+            
             <li>
               <a
                 className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400 

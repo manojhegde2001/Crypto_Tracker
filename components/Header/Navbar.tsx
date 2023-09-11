@@ -4,6 +4,7 @@ import logo from '../../public/logo.png';
 import search from '../../public/Vector.png';
 import close from '../../public/close.png';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -83,6 +84,7 @@ const Navbar = () => {
             >
               BLOGS
             </a>
+            
           </div>
         </div>
       )}
