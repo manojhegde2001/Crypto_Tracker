@@ -98,7 +98,7 @@ const Table = () => {
                     <div className="flex justify-end ml-2">
                       {dataItem?.total_volume}
                     </div>
-                    <p className="text-gray-500 text-end">932,071 BTC</p>
+                    <p className="text-gray-500 text-end text-sm">932,071 BTC</p>
                   </td>
                   <td className="font-medium items-center justify-center max-[750px]:hidden">
                     <div className="flex justify-center ml-2">
