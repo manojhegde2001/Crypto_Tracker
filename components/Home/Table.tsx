@@ -68,7 +68,7 @@ const Table = () => {
                         alt="logo"
                       />
                       <span className="pl-2">{dataItem?.name}</span>
-                      <p className="text-gray-500 uppercase pl-2">
+                      <p className="text-gray-400 uppercase pl-2">
                         {dataItem?.symbol}
                       </p>
                     </div>
@@ -117,15 +117,20 @@ const Table = () => {
           <div className="w-4/5 justify-end">
         <nav aria-label="Page navigation" className="flex justify-end pt-5 pb-5">
           <ul className="list-style-none flex gap-2">
-            <li>
+          <li>
               <a
-                className="relative block border-2 bg-transparent rounded-lg px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400"
+                className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400 
+                ${currentPage === startIndex ? "pointer-events-none hidden" : ""}`}
                 href="#!"
-                onClick={() => handlePageChange(currentPage - 1)}
+                onClick={() => {
+                  if (currentPage >= 0) {
+                    handlePageChange(currentPage - 1);
+                  }
+                }}
               >
                 &lt;
               </a>
-            </li>
+</li>
             
             {/* {Array.from({ length: totalPages }).map((_, index) => (
               <li key={index}>
@@ -146,11 +151,12 @@ const Table = () => {
               </li>
             ))} */}
             <li>
+              <p className="relative block bg-transparent px-3 py-1.5 text-sm text-black font-medium">{currentPage + 1}</p>
+            </li>
+            <li>
               <a
                 className={`relative block rounded-lg border-2 bg-transparent px-3 py-1.5 text-sm text-black transition-all duration-300 font-medium hover:bg-neutral-400 
-                ${
-                  currentPage === totalPages - 1 ? "pointer-events-none" : ""
-                }`}
+                `}
                 href="#!"
                 onClick={() => handlePageChange(currentPage + 1)}
               >
